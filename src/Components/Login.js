@@ -60,10 +60,10 @@ function Login() {
   const [code, setCode] = useState("");
   console.log(firstName);
 
-  const loginUrl = "https://bookapi-2.herokuapp.com/new/login";
-  const registerUrl = "https://bookapi-2.herokuapp.com/new/data";
+  const loginUrl = "https://bookapi-weil.onrender.com/new/login";
+  const registerUrl = "https://bookapi-weil.onrender.com/new/data";
   const codeVerificationUrl =
-    "https://bookapi-2.herokuapp.com/new/verification";
+    "https://bookapi-weil.onrender.com/new/verification";
 
   const openModalFun = () => {
     setOpenModal(true);
