@@ -35,7 +35,7 @@ function Book() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const url = "https://bookapi-1.herokuapp.com/book/booklist";
+  const url = "https://bookapi-weil.onrender.com/book/booklist";
   useEffect(() => {
     const booksFetching = async () => {
       const books = await axios.get(url);
