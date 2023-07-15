@@ -68,7 +68,7 @@ function Search() {
   useEffect(() => {
     const booksData = async () => {
       const fetched_books = await axios.get(
-        "https://bookapi-weil.onrender.com/book/booklist"
+        "https://bookstore-backend-v2.onrender.com/book/booklist"
       );
       setBook(fetched_books.data);
     };
