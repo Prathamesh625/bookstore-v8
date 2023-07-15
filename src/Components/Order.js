@@ -68,7 +68,7 @@ function Order() {
   console.log(user);
   const sendOrder = async () => {
     const myOrder = await axios.post(
-      "https://bookapi-2.herokuapp.com/orders/create/new/order",
+      "https://bookstore-backend-v2.onrender.com/orders/create/new/order",
       {
         personName: user.user_name,
         personId: user.user_id,
