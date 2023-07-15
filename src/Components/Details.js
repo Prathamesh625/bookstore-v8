@@ -59,7 +59,7 @@ function Details() {
   console.log(getMyUserId);
 
   const action = async () => {
-    const sendToServerUrl = `https://bookapi-weil.onrender.com/cart/${getMyUserId}/update/cart`;
+    const sendToServerUrl = `https://bookstore-backend-v2.onrender.com/cart/${getMyUserId}/update/cart`;
 
     const postCartToServer = await axios.put(sendToServerUrl, {
       cart: s,
@@ -71,7 +71,7 @@ function Details() {
   };
 
   const buyNow = async () => {
-    const sendToServerUrl = `https://bookapi-weil.onrender.com/cart/${getMyUserId}/update/cart`;
+    const sendToServerUrl = `https://bookstore-backend-v2.onrender.com/cart/${getMyUserId}/update/cart`;
     const postCartToServer = await axios.put(sendToServerUrl, {
       cart: s,
     });
