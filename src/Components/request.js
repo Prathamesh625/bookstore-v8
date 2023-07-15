@@ -1,6 +1,6 @@
 const requests = {
-  mpsc: "https://bookapi-weil.onrender.com/book/searchbook/mpsc",
-  upsc: "https://bookapi-weil.onrender.com/book/searchbook/mpsc",
+  mpsc: "https://bookstore-backend-v2.onrender.com/book/searchbook/mpsc",
+  upsc: "https://bookstore-backend-v2.onrender.com/book/searchbook/mpsc",
 };
 
 export default requests;
