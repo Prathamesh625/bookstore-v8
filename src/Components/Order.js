@@ -35,7 +35,7 @@ function Order() {
   const getUserDetails = useSelector((state) => state.users);
   const getMyUserId = JSON.parse(localStorage.getItem("userAuth"));
   console.log(getMyUserId);
-  const myCart = `https://bookapi-2.herokuapp.com/cart/${getMyUserId}/myCart/all/items`;
+  const myCart = `https://bookapi-weil.onrender.com/cart/${getMyUserId}/myCart/all/items`;
 
   useEffect(() => {
     const cartFun = async () => {
@@ -87,7 +87,7 @@ function Order() {
   const [open, setOpen] = useState(false);
   const order = async () => {
     const orderData = await axios.post(
-      "https://bookapi-2.herokuapp.com/payments/pay",
+      "https://bookapi-weil.onrender.com/payments/pay",
       {
         amount: totalAmount.pay * 100,
       }
@@ -107,7 +107,7 @@ function Order() {
       order_id: orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
       handler: async (response) => {
         const payment = await axios.post(
-          "https://bookapi-2.herokuapp.com/payments/verifyOrder",
+          "https://bookapi-weil.onrender.com/payments/verifyOrder",
           {
             order_id: response.razorpay_order_id,
             payment_id: response.razorpay_payment_id,
