@@ -33,7 +33,7 @@ function MyOrder() {
   useEffect(() => {
     const orders = async () => {
       const myOrders = await axios.get(
-        `https://bookapi-2.herokuapp.com/orders/${getMyUserId}/yourOrders/details`
+        `https://bookapi-weil.onrender.com/orders/${getMyUserId}/yourOrders/details`
       );
       console.log(myOrders.data);
       setOrder(myOrders.data);
