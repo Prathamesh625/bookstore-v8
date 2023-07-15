@@ -68,7 +68,7 @@ function Search() {
   useEffect(() => {
     const booksData = async () => {
       const fetched_books = await axios.get(
-        "https://bookapi-1.herokuapp.com/book/booklist"
+        "https://bookapi-weil.onrender.com/book/booklist"
       );
       setBook(fetched_books.data);
     };
