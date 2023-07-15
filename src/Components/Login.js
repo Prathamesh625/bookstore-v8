@@ -60,10 +60,10 @@ function Login() {
   const [code, setCode] = useState("");
   console.log(firstName);
 
-  const loginUrl = "https://bookapi-weil.onrender.com/new/login";
-  const registerUrl = "https://bookapi-weil.onrender.com/new/data";
+  const loginUrl = "https://bookstore-backend-v2.onrender.com/new/login";
+  const registerUrl = "https://bookstore-backend-v2.onrender.com/new/data";
   const codeVerificationUrl =
-    "https://bookapi-weil.onrender.com/new/verification";
+    "https://bookstore-backend-v2.onrender.com/new/verification";
 
   const openModalFun = () => {
     setOpenModal(true);
