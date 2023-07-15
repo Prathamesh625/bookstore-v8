@@ -27,7 +27,7 @@ function Cart() {
 
   const getMyUserId = JSON.parse(localStorage.getItem("userAuth"));
   console.log(getMyUserId);
-  const myCart = `https://bookapi-weil.onrender.com/cart/${getMyUserId}/myCart/all/items`;
+  const myCart = `https://bookstore-backend-v2.onrender.com/cart/${getMyUserId}/myCart/all/items`;
 
   useEffect(() => {
     const cartFun = async () => {
